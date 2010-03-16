@@ -1,15 +1,19 @@
 Ruby Vkontakte Poster
 =====================
 
-Использование
--------------
+Install
+---------
+
+    gem install rvk
+
+Example
+-------
 
     require 'rvk'
     
-    u = Vkontakte::User.new session
-    u = Vkontakte::User.new email, password
+    u = Vkontakte::User.new email, password # or Vkontakte::User.new session
 
     u.add_note title, body
     u.set_status status
 
-Основан на http://github.com/ai/twitter2vk
+Based on [twitter2vk](http://github.com/ai/twitter2vk)
