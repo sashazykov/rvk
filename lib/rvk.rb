@@ -1,9 +1,9 @@
 require 'open-uri'
 require 'net/http'
 
-require 'vkontakte/status'
-require 'vkontakte/note'
-require 'vkontakte/user'
+require 'rvk/status'
+require 'rvk/note'
+require 'rvk/user'
 
 module Vkontakte
   class VkontakteError < Exception; end;
