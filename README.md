@@ -1,6 +1,10 @@
 Ruby Vkontakte Poster
 =====================
 
+A simple Ruby gem which help send notes and change status in VK.
+
+Based on [twitter2vk](http://github.com/ai/twitter2vk) gem.
+
 Install
 ---------
 
@@ -15,5 +19,3 @@ Example
 
     u.add_note title, body
     u.set_status status
-
-Based on [twitter2vk](http://github.com/ai/twitter2vk)
