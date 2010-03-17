@@ -20,7 +20,11 @@ module Vkontakte
       if resource.body.empty?
         raise VkontakteError, "Could not fetch session"
       end
-      resource.body.match(/id='s' value='([a-z0-9]+)'/)[1]
+      if match = resource.body.match(/id='s' value='([a-z0-9]+)'/)
+        match[1]
+      else
+        raise VkontakteError, "Could not find session"
+      end
     end
   end
 end

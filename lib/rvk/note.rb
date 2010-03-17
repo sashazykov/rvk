@@ -14,7 +14,11 @@ module Vkontakte
     def fetch_notehash
       request = open('http://vk.com/notes.php?act=new', 'Cookie' => "remixsid=#{self.session}")
       profile = request.read.to_s
-      profile.match(/<input type="hidden" name="hash" id="hash" value="([^"]+)">/)[1]
+      if match = profile.match(/<input type="hidden" name="hash" id="hash" value="([^"]+)">/)
+        match[1]
+      else
+        raise VkontakteError, "Could not find note hash"
+      end
     end
     
   end

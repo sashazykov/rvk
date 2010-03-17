@@ -13,7 +13,11 @@ module Vkontakte
     def fetch_activityhash
       request = open('http://vk.com/profile.php', 'Cookie' => "remixsid=#{self.session}")
       profile = request.read.to_s
-      profile.match(/<input type='hidden' id='activityhash' value='([^']+)'>/)[1]
+      if match = profile.match(/<input type='hidden' id='activityhash' value='([^']+)'>/)
+        match[1]
+      else
+        raise VkontakteError, "Could not find status hash"
+      end
     end
     
   end
