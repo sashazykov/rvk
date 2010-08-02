@@ -25,11 +25,7 @@ module Vkontakte
     end
     
     def decode_hash hash
-      a = hash[-5..-1] + hash[4..hash.length-9]
-      a.length.times.inject('') do |all, i|
-        j = a.length - i - 1
-        all + a[j..j]
-      end
+      (hash[-5..-1] + hash[4..hash.length-9]).reverse
     end
     
   end
