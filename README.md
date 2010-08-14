@@ -23,6 +23,5 @@ Example
 Authors
 -------
 
-[Alexander Zykov](mailto:alexandrz@gmail.com)
-
-[Andrey Sitnik](mailto:andrey@sitnik.ru)
+*   [Alexander Zykov](mailto:alexandrz@gmail.com)
+*   [Andrey Sitnik](mailto:andrey@sitnik.ru)
