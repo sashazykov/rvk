@@ -3,9 +3,10 @@ require 'net/http'
 
 $KCODE = 'u'
 
-require 'rvk/status'
-require 'rvk/note'
-require 'rvk/user'
+dir = File.dirname(__FILE__)
+require File.join(dir, 'rvk/status')
+require File.join(dir, 'rvk/note')
+require File.join(dir, 'rvk/user')
 
 module Vkontakte
   class VkontakteError < Exception; end;
