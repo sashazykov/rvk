@@ -19,3 +19,9 @@ Example
 
     u.add_note title, body
     u.set_status status
+    
+Authors
+-------
+
+Alexander Zykov <alexandrz@gmail.com>
+Andrey Sitnik <andrey@sitnik.ru>
