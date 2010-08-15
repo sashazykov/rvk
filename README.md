@@ -16,6 +16,7 @@ Example
     require 'rvk'
     
     u = Vkontakte::User.new email, password # or Vkontakte::User.new session
+    # You can save u.session
 
     u.add_note title, body
     u.set_status status
