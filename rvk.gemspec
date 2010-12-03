@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'rvk'
-  s.version = '0.1.7'
+  s.version = '0.1.8'
   s.date = '2010-09-28'
   s.authors = ['Alexandr Zykov', 'Andrey Sitnik']
   s.email = 'alexandrz@gmail.com'
