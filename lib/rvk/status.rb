@@ -27,7 +27,7 @@ module Vkontakte
       if match = @profile.match(regexp)
         match[1]
       else
-        raise VkontakteError, "Could not find status hash or #{regexp}"
+        raise VkontakteError, "Could not find #{regexp}"
       end
     end
   end
