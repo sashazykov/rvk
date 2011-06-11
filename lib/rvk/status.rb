@@ -12,7 +12,7 @@ module Vkontakte
       request.set_form_data({
         'al'            => 1,
         'act'           => 'post',
-        'to_id'         => find_in_profile(/"user_id":(\d+)/),
+        'to_id'         => find_in_profile(/"user_id":"?(\d+)"?/),
         'hash'          => find_in_profile(/"post_hash":"([^"]+)"/),
         'message'       => text,
         'note_title'    => '',
